@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/pages.css" media="screen">
+    <title>Jogar</title>
+</head>
+    <body>
+        <header>
+        <img src="imagens/logo.png" alt="Logo Alura">
+        </header>
+        <main> 
+            <div class="conteiner">
+                <div id="imagens"></div>         
+                <div id="palavra-secreta" onclick="capturaTecla()">
+
+                    <!--
+                    <div class="letras">A</div>
+                    <div class="letras">H</div>
+                    <div class="letras">F</div>
+                    <div class="letras">C</div>-->
+                </div>
+                <div id="palavra-digitada"></div>
+                <div id="categoria"></div>
+                <!--inicio de modal-->
+
+                <div class="modal fade" id="modalI" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                        <h5 class="modal-title" id="title-modal"></h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+
+                        <div class="modal-body" id="modalbody"></div>
+
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--Fim de modal-->
+                <div id="teclado">
+                    <div class="teclas">
+                        <button id="tecla-A" onclick="verifLtr('A')">A</button>
+                        <button id="tecla-B" onclick="verifLtr('B')">B</button>
+                        <button id="tecla-C" onclick="verifLtr('C')">C</button>
+                        <button id="tecla-D" onclick="verifLtr('D')">D</button>
+                        <button id="tecla-E" onclick="verifLtr('E')">E</button>
+                        <button id="tecla-F" onclick="verifLtr('F')">F</button>
+                        <button id="tecla-G" onclick="verifLtr('G')">G</button>
+                        <button id="tecla-H" onclick="verifLtr('H')">H</button>
+                        <button id="tecla-I" onclick="verifLtr('I')">I</button>
+                    </div>
+                    <div class="teclas">
+                        <button id="tecla-J" onclick="verifLtr('J')">J</button>
+                        <button id="tecla-K" onclick="verifLtr('K')">K</button>
+                        <button id="tecla-L" onclick="verifLtr('L')">L</button>
+                        <button id="tecla-M" onclick="verifLtr('M')">M</button>
+                        <button id="tecla-N" onclick="verifLtr('N')">N</button>
+                        <button id="tecla-O" onclick="verifLtr('O')">O</button>
+                        <button id="tecla-P" onclick="verifLtr('P')">P</button>
+                        <button id="tecla-Q" onclick="verifLtr('Q')">Q</button>
+                        <button id="tecla-R" onclick="verifLtr('R')">R</button>
+                    </div>
+                    <div class="teclas">
+                        <button id="tecla-S" onclick="verifLtr('S')">S</button>
+                        <button id="tecla-T" onclick="verifLtr('T')">T</button>
+                        <button id="tecla-U" onclick="verifLtr('U')">U</button>
+                        <button id="tecla-V" onclick="verifLtr('V')">V</button>
+                        <button id="tecla-W" onclick="verifLtr('W')">W</button>
+                        <button id="tecla-X" onclick="verifLtr('X')">X</button> 
+                        <button id="tecla-Y" onclick="verifLtr('Y')">Y</button>
+                        <button id="tecla-Z" onclick="verifLtr('Z')">Z</button>
+                    </div>
+                </div>
+
+            </div>
+            <button id="reiniciar">NOVO JOGO</button>
+            <button id="voltar">VOLTAR</button>
+            <!--<div>
+                
+                <button>Adicionar Palavra</button>
+                
+            </div>-->
+        </main>  
+       
+        <footer>
+            <h3 id="dev">&#169; Desenvolvido por Ana Caroline</h3>
+
+            <div class="navegacao">
+
+                <li>
+                    <a href="http://www.linkedin.com/in/ana-caroline-48z9/">Linkedin</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/AnaCaroline1">Github</a> 	
+                </li>		
+            </div>
+        </footer> 
+        <script src="js/page-jogar.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+
+    </body>
+</html>

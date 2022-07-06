@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <title>Adicionar Palavra</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="logo de navegação entre páginas Alura">
+    </header>
+    <main>
+        <section>
+            <h1 class="titulo">Digite Sua Palavra</h1>
+            <form  id="form">
+                <div>
+                    <input id="P-digitaP" type="text" placeholder="Digite aqui a palavra." class="digitar-palavra">
+                    <label for="P-digitaP" class="label">Lembre-se: escreva apenas palavras sem acento.</label>
+                </div>
+                <div>
+                    <input id="P-digitaC" type="text" placeholder="Digite aqui a categoria." class="digitar-categoria">
+                    <label for="P-digitaC" class="label">Lembre-se: escreva apenas palavras sem acento.</label>
+                </div>
+            </form>
+            <div class="botao">
+                <button class="confirmar" id="p-confirma" onclick="btnAddPalavra()">Confirmar palavra</button>
+                <button class="volta"><a href="page1.html">Voltar</a></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3 id="dev">&#169; Desenvolvido por Ana Caroline</h3>
+
+            <div class="navegacao">
+
+                <li>
+                    <a href="http://www.linkedin.com/in/ana-caroline-48z9/">Linkedin</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/AnaCaroline1">Github</a> 	
+                </li>		
+            </div>
+    </footer>
+    <script src="js/adiciona-palavra.js"></script>
+    <script src="js/page-jogar.js"></script>
+</body>
+</html>

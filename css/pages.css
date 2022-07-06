@@ -1,0 +1,431 @@
+*{
+	font-family: 'padauk', sans-serif;
+}
+body {
+
+	display: inline-block;
+
+	background: #544672d5;
+
+
+}
+
+header {
+	margin: 5px 5px;
+	height: 100px;
+	padding: 5px;
+}
+
+.main {
+	position: absolute;
+}
+
+.botoes-inicio {
+	display: inline-flex;
+	flex-direction: column;
+	width: 600px;
+	height: 260px;
+}
+
+#inicio-jogo {
+
+
+	margin: 30px 300px 0 420px;
+	background-color: rgb(113, 96, 155);
+
+	width: 300px;
+	height: 80px;
+
+	border: none;
+
+	padding-right: 20px;
+
+	border-radius: 20px;
+
+	box-sizing: border-box;
+
+}
+
+.inicio-botao {
+
+	margin-top: 30px;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(252, 251, 253);
+	text-decoration: none;
+
+	transition: 400ms;
+}
+
+.inicio-botao:hover {
+	color: rgba(252, 251, 253, 0.5);
+	font-weight: bold;
+	font-size: 25px;
+
+}
+
+#inicio-jogo:hover {
+	border: 3px solid rgb(58, 43, 68);
+	cursor: pointer;
+}
+
+#adiciona-palavra {
+
+
+	margin: 30px 20px 0 420px;
+	background-color: rgb(79, 65, 112);
+
+	width: 300px;
+	height: 80px;
+
+	border: none;
+
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+/*────────────────CSS da page adicionar──────────────*/
+
+main {
+	display: inline-flex;
+	max-width: 400px;
+	max-height: 200px;
+	margin: auto 20px;
+
+	flex-wrap: nowrap;
+
+	align-items: flex-start;
+
+	justify-content: space-between;
+
+}
+.titulo{
+	color:#ffffff;
+	font-size: 2em;
+	font-weight: bold;
+
+	text-align: center;
+    margin: 2em;
+}
+#formulario{
+    margin: 0 2em 0 4em;
+
+	padding: 2em;
+}
+
+
+.digitar-palavra {
+
+	background-color: rgb(113, 96, 155);
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+
+	padding: 20px;
+
+	width: 400px;
+	height: 20%;
+
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-bottom: 2em;
+
+	border: none;
+	border-radius: 20px;
+
+}
+
+.digitar-palavra::placeholder {
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+.digitar-palavra:hover {
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+.label{
+	position: relative;
+	padding: 2em 15em;
+
+	color: white;
+	font-size: 15px;
+}
+
+.digitar-categoria{
+
+	background-color: rgb(113, 96, 155);
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+
+	padding: 20px;
+
+	width: 400px;
+	height: 20%;
+
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-bottom: 2em;
+	margin-top:2em; 
+	border: none;
+	border-radius: 20px;
+
+}
+
+.digitar-categoria::placeholder {
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+.digitar-categoria:hover {
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+.botao {
+	position: relative;
+	margin: 0 2em 0 22em;
+	padding: 2em;
+	width: 600px;
+	height: 200px;
+}
+
+.confirmar {
+
+	background-color: rgb(88, 66, 109);
+
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 20px;
+
+    margin-bottom: 2em;
+	width: 50%;
+	height: 30%;
+
+	border-radius: 20px;
+	border: none;
+}
+
+.confirmar:hover {
+	border: 5px solid rgb(61, 61, 141);
+	cursor: pointer;
+}
+
+.volta {
+	background-color: rgb(136, 104, 167);
+
+	padding: 20px;
+	width: 50%;
+	height: 30%;
+
+	border-radius: 20px;
+	border: none;
+}
+.volta a {
+
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.volta:hover {
+
+	border: 5px solid rgb(104, 66, 165);
+	cursor: pointer;
+}
+
+/*──────────────────CSS page-jogo───────────────────*/
+
+.conteiner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#imagens {
+	background-image: url("../imagens/forca.png");
+	width: 234px;
+	height: 272px;
+	background-repeat: no-repeat;
+	margin:auto;
+}
+
+#palavra-secreta {
+	display: flex;
+	flex-direction: row;
+	left: 20em;
+	padding: 20px;
+	margin: 2em 20em 2em 20em;
+}
+
+.letras {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+
+	width: 20px;
+
+	border-bottom: 5px solid #2b3270;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#categoria {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: absolute;
+	margin: 2em;
+    top: 25em;
+    left: 20em;
+    width: 4em;
+	height: 2em;
+}
+
+
+#teclado {
+	position: absolute;
+	top: 33em;
+	padding: 1em;
+	width: 50em;
+	height: 9em;
+	left: 10em;
+    right: 20em;
+}
+
+.teclas button {
+	background-color: rgb(49, 26, 26);
+	width: 1.5em;
+	height: 1.5em;
+	margin: 5px;
+
+	margin-bottom: 4px;
+	cursor: pointer;
+	box-shadow: 0px 2px 8px grey;
+	border-radius: 5px;
+
+
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.teclas,button:hover {
+	transform: scale(0.9);
+}
+
+.teclas button:disabled {
+	cursor: not-allowed;
+}
+
+.styleTeclado {
+	background-color: rgb(148, 111, 89)
+}
+
+#reiniciar {
+	background-color: rgb(113, 96, 155);
+	color: #ffffff;
+	font-weight: bold;
+
+	position: absolute;
+	width: 300px;
+	height: 80px;
+	top: 45em;
+	left: 6em;
+    right: 20em;	
+	margin: 3em;
+
+	border: 3px solid rgb(49, 26, 26);
+
+	padding-right: 20px;
+
+	border-radius: 20px;
+
+	box-sizing: border-box;
+}
+
+#reiniciar:hover {
+	border: 3px solid #ffffff;
+	transition: 0.5s;
+}
+#voltar{
+
+	background-color: rgb(113, 96, 155);
+	color: #ffffff;
+	font-weight: bold;
+
+	position: absolute;
+	width: 300px;
+	height: 80px;
+	top: 45em;
+	left: 40em;
+    right: 20em;	
+	margin: 3em;
+
+	border: 3px solid rgb(49, 26, 26);
+
+	padding-right: 20px;
+
+	border-radius: 20px;
+
+	box-sizing: border-box;
+}
+#voltar:hover {
+	border: 3px solid #ffffff;
+	transition: 0.5s;
+}
+/*──────────────────Rodapé─────────────────────*/
+
+
+footer {
+	position: relative;
+	width: auto;
+    height: auto;
+    padding: 2em 4em 0 4em;
+	margin: 32em 20em 0 24em;
+}
+
+#dev {
+	color: #c5c2c2;
+	font-family: monospace, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	transition: 1s all;
+}
+
+#dev:hover {
+	color: #ffffff;
+}
+
+.navegacao {
+position: relative;
+}
+.navegacao li{
+	display: inline-block;
+	text-align: center;
+
+	vertical-align: top;
+	margin:0 1.5%;
+	padding: 30px 36px;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.navegacao a {
+	color: rgb(58, 43, 68);
+	font-family: Times, serif;
+	font-weight: bold;
+	font-size: 20px;
+
+	transition: 0.9s all;
+	text-decoration: none;
+}
+
+.navegacao a:hover {
+	color: #ffffff;
+}
